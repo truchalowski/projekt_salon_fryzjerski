@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="shadow-box" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.salon_fryzjerski_projekt.BookingEndController">
+    <top>
+        <fx:include source="topNavbar.fxml" />
+    </top>
+    <center>
+        <VBox alignment="CENTER" fillWidth="false" maxHeight="600.0" maxWidth="800.0" prefHeight="200.0" prefWidth="100.0" styleClass="shadow-box" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="603.0" prefWidth="939.0">
+               <children>
+                  <Text fill="#33c65a" layoutX="53.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gotowe!">
+                     <font>
+                        <Font name="System Bold" size="45.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="142.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Proces rejestracji został pomyślnie zakończony.">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dziękujemy za skorzystanie z naszych usług i zapraszamy ponownie">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="310.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleHelloButton" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: green;" text="Wróć do menu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="310.0" layoutY="374.0" mnemonicParsing="false" onAction="#handleExitButton" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: red;" text="Wyjdź z aplikacji" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children></VBox>
+    </center>
+</BorderPane>

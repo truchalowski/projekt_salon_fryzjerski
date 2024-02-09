@@ -1,0 +1,157 @@
+.root {
+     -fx-font-family: 'Arial';
+}
+
+.button{
+    -fx-cursor: hand;
+}
+
+.booking-button .button:focused{
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.booking-button:hover{
+    -fx-background-color: derive(#4CAF50, 50%);
+    -fx-border-color: derive(#4CAF50, 50%);
+    -fx-text-fill: white;
+
+}
+.booking-button-unselected{
+    -fx-border-color: gray;
+    -fx-background-color: transparent;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+}
+.booking-button-selected {
+    -fx-background-color: #4CAF50;
+    -fx-border-color: derive(#4CAF50, 50%);
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+
+.booking-navigation-button{
+    -fx-border-radius: 512;
+    -fx-background-radius: 512;
+    -fx-background-color: transparent;
+    -fx-border-color: gray;
+}
+.booking-navigation-button:hover{
+    -fx-background-color: #e9e9e9;
+}
+
+.back-button{
+    -fx-border-radius: 512;
+    -fx-background-radius: 512;
+    -fx-background-color: transparent;
+    -fx-border-color: gray;
+    -fx-font-size: 20px;
+}
+.back-button:hover{
+    -fx-background-color: #e9e9e9;
+
+}
+
+.login-register-button{
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+}
+.login-register-button:hover{
+    -fx-background-color: #4CAF50;
+}
+.default-button:hover{
+    -fx-background-color: derive(#4CAF50, 50%);
+    -fx-border-color: derive(#4CAF50, 50%);
+    -fx-text-fill: white;
+}
+.default-button{
+    -fx-border-color: gray;
+    -fx-background-color: transparent;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+}
+
+.underline-box {
+    -fx-border-color: black;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-style: solid;
+    -fx-padding: 5px;
+}
+
+.combo-box {
+    -fx-font-size: 12px;
+    -fx-background-color: #f2f2f2;
+    -fx-border-color: #bfbfbf;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 4 8 4 8;
+}
+
+.combo-box:hover {
+    -fx-border-color: #a3a3a3;
+}
+
+.combo-box .list-cell {
+    -fx-padding: 4 8 4 8;
+}
+
+.combo-box .list-cell:filled:selected, .combo-box .list-cell:filled:selected:hover {
+    -fx-background-color: #d9d9d9;
+    -fx-text-fill: black;
+}
+.shadow-box {
+    -fx-border-color: black;
+    -fx-border-width: 0.1;
+    -fx-pref-width: 800px;
+    -fx-pref-height: 600px;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 5);
+    -fx-alignment: center;
+}
+
+.menu-button {
+    -fx-background-color: linear-gradient(to bottom, #4facfe, #00f2fe);
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-padding: 10 20 10 20;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+
+}
+
+.menu-button .menu-item {
+    -fx-padding: 10 20 10 20;
+    -fx-pref-width: 150px;
+}
+
+.menu-button .menu-item:hover {
+    -fx-background-color: #808080;
+}
+
+.menu-button .arrow {
+    -fx-background-color: white;
+}
+.img-settings{
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+}
+.hello-text{
+    -fx-fill: black;
+}
+
+.panel-selected{
+    -fx-background-color: #607c3c;
+    -fx-text-fill: white;
+}
+
+
+

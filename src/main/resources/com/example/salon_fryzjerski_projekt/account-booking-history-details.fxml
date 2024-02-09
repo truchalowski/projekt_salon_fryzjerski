@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.salon_fryzjerski_projekt.AccountBookingHistoryDetails">
+    <top>
+        <fx:include source="topNavbar.fxml" />
+    </top>
+    <center>
+        <VBox alignment="CENTER" fillWidth="false" maxHeight="600.0" maxWidth="800.0" prefHeight="200.0" prefWidth="100.0" styleClass="shadow-box" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="588.0" prefWidth="920.0">
+                    <children>
+                        <Button fx:id="submitButton" layoutX="200.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: red;" text="Zrezygnuj z rezerwacji" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <Text layoutX="43.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Podsumowanie rezerwacji">
+                            <font>
+                                <Font name="System Bold" size="30.0" />
+                            </font>
+                        </Text>
+                        <VBox layoutX="43.0" layoutY="198.0" prefHeight="93.0" prefWidth="346.0" spacing="5.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Rodzaj rezerwacji:">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Text>
+                                <VBox prefHeight="66.0" prefWidth="346.0" spacing="5.0">
+                                    <children>
+                                        <HBox prefHeight="9.0" prefWidth="298.0" spacing="10.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Rodzaj:">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fx:id="bookingType" strokeType="OUTSIDE" strokeWidth="0.0" text="Strzyżenie" wrappingWidth="250.0">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                        <Text fx:id="bookingDesc" strokeType="OUTSIDE" strokeWidth="0.0" text="Krótkie strzyżenie" wrappingWidth="250.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Text>
+                                        <HBox prefHeight="2.0" prefWidth="336.0" spacing="10.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Czas trwania:">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fx:id="bookingTypeTime" strokeType="OUTSIDE" strokeWidth="0.0" text="60 min" wrappingWidth="250.0">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <HBox prefHeight="14.0" prefWidth="353.0" spacing="10.0">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cena:">
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="bookingPrice" strokeType="OUTSIDE" strokeWidth="0.0" text="100.00 zł" wrappingWidth="250.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="436.0" layoutY="313.0" prefHeight="62.0" prefWidth="309.0" spacing="10.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Oddział:">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Text>
+                                <VBox prefHeight="38.0" prefWidth="303.0" spacing="5.0">
+                                    <children>
+                                        <HBox prefHeight="20.0" prefWidth="356.0" spacing="10.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Miasto:">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fx:id="bookingCity" strokeType="OUTSIDE" strokeWidth="0.0" text="Kraków" wrappingWidth="250.0">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Salon:">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fx:id="bookingBranch" strokeType="OUTSIDE" strokeWidth="0.0" text="Kwiatowa 1" wrappingWidth="250.0">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="43.0" layoutY="343.0" prefHeight="57.0" prefWidth="418.0" spacing="10.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Pracownik: ">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Text>
+                                <Text fx:id="bookingEmployee" strokeType="OUTSIDE" strokeWidth="0.0" text="Adam Małysz" wrappingWidth="400.0">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="43.0" layoutY="108.0" prefHeight="47.0" prefWidth="230.0" spacing="10.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Termin:">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Text>
+                                <HBox prefHeight="18.0" prefWidth="200.0">
+                                    <children>
+                                        <Text fx:id="bookingDate" strokeType="OUTSIDE" strokeWidth="0.0" text="01 Stycznia 2024" wrappingWidth="150.0">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="bookingTime" strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" wrappingWidth="78.0">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="436.0" layoutY="169.0" prefHeight="62.0" prefWidth="309.0" spacing="10.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Dane osobowe:">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Text>
+                                <VBox prefHeight="38.0" prefWidth="303.0" spacing="5.0">
+                                    <children>
+                                        <HBox prefHeight="20.0" prefWidth="356.0" spacing="10.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Imie:">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fx:id="bookingName" strokeType="OUTSIDE" strokeWidth="0.0" text="Adam" wrappingWidth="250.0">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                        <HBox prefHeight="15.0" prefWidth="328.0" spacing="10.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Nazwisko:">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fx:id="bookingSurname" strokeType="OUTSIDE" strokeWidth="0.0" text="Kwiatowa 1" wrappingWidth="250.0">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <HBox prefHeight="12.0" prefWidth="328.0" spacing="10.0">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Telefon:">
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="bookingPhone" strokeType="OUTSIDE" strokeWidth="0.0" text="123456789" wrappingWidth="250.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <Button layoutX="15.0" layoutY="15.0" mnemonicParsing="false" onAction="#goBack" styleClass="back-button" text="&lt;" />
+                    </children>
+                </AnchorPane>
+            </children></VBox>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.salon_fryzjerski_projekt.BookingBranchController">
+    <top>
+        <fx:include source="topNavbar.fxml" />
+    </top>
+    <center>
+        <VBox alignment="CENTER" fillWidth="false" maxHeight="600.0" maxWidth="800.0" prefHeight="200.0" prefWidth="100.0" styleClass="shadow-box" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="110.0" prefWidth="800.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" layoutX="630.0" layoutY="50.0" prefHeight="27.0" prefWidth="55.0" />
+                        <Text layoutX="21.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wybierz oddział" wrappingWidth="333.439453125">
+                            <font>
+                                <Font name="System Bold" size="30.0" />
+                            </font>
+                        </Text>
+                  <Button layoutX="15.0" layoutY="15.0" mnemonicParsing="false" onAction="#goBackButton" styleClass="back-button" text="&lt;">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+                    </children>
+                </AnchorPane>
+            <AnchorPane prefHeight="312.0" prefWidth="800.0">
+               <children>
+                  <ComboBox fx:id="bookingBranchCombobox" layoutX="31.0" layoutY="29.0" maxHeight="27.0" onAction="#setCityName" prefHeight="27.0" prefWidth="159.0" promptText="Wybierz miasto" />
+                  <VBox alignment="CENTER_LEFT" layoutX="211.0" layoutY="14.0" prefHeight="292.0" prefWidth="564.0" spacing="10.0">
+                     <children>
+                        <VBox fx:id="branchBox1" prefHeight="39.0" prefWidth="605.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="33.0" prefWidth="567.0" spacing="10.0">
+                                 <children>
+                                    <Text fx:id="branchName1" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="470.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Button fx:id="branchSelectButton1" mnemonicParsing="false" onAction="#findBookingBranchTextIndex" prefHeight="30.0" prefWidth="72.0" styleClass="default-button" text="Wybierz" />
+                                 </children>
+                              </HBox>
+                              <Line endX="-1.0" endY="1.5857863426208496" startX="-480.78314208984375" startY="2.0" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="branchBox2" layoutX="10.0" layoutY="137.0" prefHeight="39.0" prefWidth="605.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="33.0" prefWidth="567.0" spacing="10.0">
+                                 <children>
+                                    <Text fx:id="branchName2" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="470.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Button fx:id="branchSelectButton2" mnemonicParsing="false" onAction="#findBookingBranchTextIndex" prefHeight="30.0" prefWidth="75.0" styleClass="default-button" text="Wybierz" />
+                                 </children>
+                              </HBox>
+                              <Line endX="-1.0" endY="2.0" startX="-480.78314208984375" startY="2.0" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="branchBox3" layoutX="10.0" layoutY="159.0" prefHeight="39.0" prefWidth="605.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="33.0" prefWidth="567.0" spacing="10.0">
+                                 <children>
+                                    <Text fx:id="branchName3" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="470.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Button fx:id="branchSelectButton3" mnemonicParsing="false" onAction="#findBookingBranchTextIndex" prefHeight="30.0" prefWidth="75.0" styleClass="default-button" text="Wybierz" />
+                                 </children>
+                              </HBox>
+                              <Line endX="-1.0" endY="2.0" startX="-480.78314208984375" startY="2.0" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="branchBox4" layoutX="10.0" layoutY="181.0" prefHeight="39.0" prefWidth="605.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="33.0" prefWidth="567.0" spacing="10.0">
+                                 <children>
+                                    <Text fx:id="branchName4" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="470.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Button fx:id="branchSelectButton4" mnemonicParsing="false" onAction="#findBookingBranchTextIndex" prefHeight="30.0" prefWidth="75.0" styleClass="default-button" text="Wybierz" />
+                                 </children>
+                              </HBox>
+                              <Line endX="-1.0" endY="2.0" startX="-480.78314208984375" startY="2.0" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="branchBox5" layoutX="10.0" layoutY="203.0" prefHeight="39.0" prefWidth="605.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="33.0" prefWidth="567.0" spacing="10.0">
+                                 <children>
+                                    <Text fx:id="branchName5" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="470.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Button fx:id="branchSelectButton5" mnemonicParsing="false" onAction="#findBookingBranchTextIndex" prefHeight="30.0" prefWidth="75.0" styleClass="default-button" text="Wybierz" />
+                                 </children>
+                              </HBox>
+                              <Line endX="-1.0" endY="2.0" startX="-480.78314208984375" startY="2.0" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="branchBox6" layoutX="10.0" layoutY="225.0" prefHeight="39.0" prefWidth="605.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="33.0" prefWidth="567.0" spacing="10.0">
+                                 <children>
+                                    <Text fx:id="branchName6" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="470.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Button fx:id="branchSelectButton6" mnemonicParsing="false" onAction="#findBookingBranchTextIndex" prefHeight="30.0" prefWidth="75.0" styleClass="default-button" text="Wybierz" />
+                                 </children>
+                              </HBox>
+                              <Line endX="-1.0" endY="2.0" startX="-480.78314208984375" startY="2.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+                <AnchorPane prefHeight="104.0" prefWidth="800.0">
+                    <children>
+                        <HBox layoutX="260.0" layoutY="29.0" prefHeight="52.0" prefWidth="281.0" spacing="10.0">
+                            <children>
+                                <Button fx:id="bookingBranchPrevButton" mnemonicParsing="false" onAction="#prevPage" prefHeight="40.0" prefWidth="70.0" styleClass="booking-navigation-button" text="&lt;">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                </Button>
+                                <HBox alignment="CENTER" prefHeight="68.0" prefWidth="141.0" spacing="3.0">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Strona">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="bookingBranchPaginationText" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="25.857421875">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="na">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="bookingBranchMaxPaginationText" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="25.857421875">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <Button fx:id="bookingBranchNextButton" mnemonicParsing="false" onAction="#nextPage" prefHeight="40.0" prefWidth="70.0" styleClass="booking-navigation-button" text="&gt;">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </center>
+
+</BorderPane>
